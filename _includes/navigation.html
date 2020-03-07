@@ -1,0 +1,7 @@
+<nav>
+  {% for endpoint in site.data.navigation %}
+  	<a href="{{ endpoint.link }}" {% if page.url == endpoint.link %} class="current" {% endif %}>
+  		{{ endpoint.name }}
+  	</a>
+  {% endfor %}
+</nav>
